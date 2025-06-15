@@ -231,7 +231,7 @@ void printFFT_Magnitude_MaxPossitive() {
 	uint16_t pos = 0;
 
 	// Cycle through fftAdc array where even index is real, odd index is imaginary
-	for (uint16_t i = 1; i < FFT_SIZE; i += 2) {
+	for (uint16_t i = 2; i < FFT_SIZE; i += 2) {
 
 		// The k-th bin of the FFT
 		uint16_t k = i / 2;
